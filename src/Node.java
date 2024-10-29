@@ -1,5 +1,5 @@
 public class Node {
-    public int data;
+    public String data;
     public Node next;
     public Node prev;
 }
