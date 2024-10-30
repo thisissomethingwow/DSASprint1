@@ -1,10 +1,6 @@
 public class Task {
     private String description;
-    private boolean completed = false;
-
-    public void markCompleted(){
-        completed = true;
-    }
+    private boolean completed;
 
     public String getDescription() {
         return description;
@@ -22,4 +18,16 @@ public class Task {
         this.completed = completed;
     }
 
+    public Task(String description) {
+        this.description = String.valueOf(description);
+        this.completed = false;
+    }
+
+    @Override
+    public String toString() {
+        if (completed){
+            return (description+"(completed)");
+        }
+        return (description+ "(pending)");
+    }
 }

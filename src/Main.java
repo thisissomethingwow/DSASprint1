@@ -4,6 +4,9 @@ public class Main {
         taskList.addToTaskList("hello",0);
         taskList.addToTaskList("world",1);
         taskList.printTaskList();
+        taskList.markCompleted("hello");
+        taskList.printTaskList();
+
     }
 
 }
